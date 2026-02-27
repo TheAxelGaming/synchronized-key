@@ -18,16 +18,6 @@ Los administradores definen acciones en el `config.yml` del plugin (Spigot/Paper
 
 ---
 
-## 📦 Estructura del Proyecto
-
-```
-synchronized-key/
-├── plugin/          → Plugin de Spigot/Paper (lado servidor)
-├── mod/             → Mod de Fabric (lado cliente)
-├── build.gradle     → Configuración raíz de Gradle
-└── settings.gradle  → Multi-módulo Gradle
-```
-
 ---
 
 ## 🔧 Requisitos
@@ -118,32 +108,6 @@ Canal: `teclas_pro:main`
 3. Verificar que el jugador tiene el permiso requerido
 4. Ejecutar el comando como el jugador en el hilo principal
 
----
-
-## 🛠️ Compilación
-
-```bash
-# Compilar todo el proyecto
-./gradlew build
-
-# Solo el plugin
-./gradlew :plugin:build
-
-# Solo el mod
-./gradlew :mod:build
-```
-
-Los archivos compilados se generan en:
-- **Plugin**: `plugin/build/libs/`
-- **Mod**: `mod/build/libs/`
-
----
-
-## 📥 Instalación
-
-1. **Servidor**: Coloca el `.jar` del plugin en la carpeta `plugins/` de tu servidor Spigot/Paper
-2. **Cliente**: Coloca el `.jar` del mod en la carpeta `mods/` del cliente con Fabric + Fabric API
-3. Inicia el servidor, edita el `config.yml` generado en `plugins/SynchronizedKey/`, y usa `/sk reload`
 
 ---
 
