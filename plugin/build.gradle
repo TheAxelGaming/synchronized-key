@@ -1,0 +1,28 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+repositories {
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url = 'https://oss.sonatype.org/content/repositories/snapshots/' }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT'
+    implementation 'com.google.code.gson:gson:2.11.0'
+}
+
+// Process plugin.yml to replace version placeholder
+processResources {
+    filesMatching('plugin.yml') {
+        expand(version: project.version)
+    }
+}
+
+// Build a fat JAR with all dependencies
+shadowJar {
+    archiveClassifier.set('')
+    archiveBaseName.set('SynchronizedKey-Plugin')
+}
+
+build.dependsOn shadowJar

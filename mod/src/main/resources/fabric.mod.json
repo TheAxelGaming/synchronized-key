@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "synchronizedkey",
+  "version": "${version}",
+  "name": "synchronizedkey",
+  "description": "Mod que permite al servidor configurar teclas dinámicas en el cliente.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "accessWidener": "synchronizedkey.accesswidener",
+  "entrypoints": {
+    "main": [
+      "com.example.synchronizedkey.mod.SynchronizedKeyMod"
+    ],
+    "client": [
+      "com.example.synchronizedkey.mod.SynchronizedKeyModClient"
+    ]
+  },
+  "mixins": [
+    "synchronizedkey.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

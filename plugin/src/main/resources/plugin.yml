@@ -1,0 +1,16 @@
+name: SynchronizedKey
+version: '${version}'
+main: com.example.synchronizedkey.plugin.SynchronizedKeyPlugin
+api-version: '1.21'
+description: Synchronized Key - Spigot Plugin
+
+commands:
+  sk:
+    description: Comandos de administración de SynchronizedKey
+    usage: /sk reload
+    permission: teclaspro.admin
+
+permissions:
+  teclaspro.admin:
+    description: Permite usar el comando /sk reload
+    default: op

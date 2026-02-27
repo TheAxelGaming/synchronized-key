@@ -1,0 +1,4 @@
+accessWidener v2 named
+
+# Permitir modificar el array allKeys de GameOptions para añadir/quitar teclas dinámicas
+mutable field net/minecraft/client/option/GameOptions allKeys [Lnet/minecraft/client/option/KeyBinding;

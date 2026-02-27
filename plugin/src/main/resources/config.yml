@@ -1,0 +1,35 @@
+# ============================================================
+# SynchronizedKey - Configuración de Acciones de Keybind
+# ============================================================
+# Cada acción define una tecla que aparecerá en el cliente.
+#
+# Campos:
+#   id:          Identificador único de la acción (sin espacios)
+#   label:       Nombre visible en el menú de controles del cliente
+#   default_key: Código de tecla GLFW (ver tabla de referencia abajo)
+#   comando:     Comando a ejecutar como el jugador (SIN la barra /)
+#   permiso:     Permiso requerido (dejar vacío "" para sin restricción)
+#
+# Referencia de teclas GLFW comunes:
+#   B=66, G=71, H=72, J=74, K=75, M=77, N=78, P=80, R=82, U=85, V=86
+#   F1=290, F2=291, ..., F12=301
+# ============================================================
+
+acciones:
+  - id: "abrir_menu"
+    label: "Abrir Menú"
+    default_key: 77
+    comando: "dm open menu_principal"
+    permiso: ""
+
+  - id: "abrir_tienda"
+    label: "Abrir Tienda"
+    default_key: 66
+    comando: "dm open tienda"
+    permiso: ""
+
+  - id: "abrir_perfil"
+    label: "Ver Perfil"
+    default_key: 80
+    comando: "dm open perfil"
+    permiso: ""

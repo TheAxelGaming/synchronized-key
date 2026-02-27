@@ -1,0 +1,22 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Build outputs
+mod/build/
+plugin/build/
+mod/run/
+plugin/run/
+
+# Local properties
+local.properties

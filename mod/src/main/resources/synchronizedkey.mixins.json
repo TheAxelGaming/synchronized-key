@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "package": "com.example.synchronizedkey.mod.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "client": [
+        "GameOptionsAccessor",
+        "KeyBindingAccessor"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
